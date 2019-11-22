@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #f0fff8
+  background-image: url('https://i.imgur.com/BrJlWgM.png');
 }
 
 .header {
@@ -15,6 +15,7 @@ body {
   padding-top: 3px;
   width: auto;
   margin-bottom: 10px;
+  opacity: .9;
 }
 
 form {
@@ -24,8 +25,18 @@ form {
 .results {
   margin: 15px;
 }
+
 p {
   text-align: center;
   font-size: 15px;
   font-weight: bolder;
+}
+.docDiv{
+  padding: 5px;
+}
+.docDiv:hover {
+  outline: 4px solid #00b1f7;
+}
+.website {
+  font-size: 15px;
 }

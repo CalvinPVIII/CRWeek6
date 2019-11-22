@@ -16,13 +16,13 @@ if (typeof response == 'string' && response.includes("There was an error handlin
     $(".results").hide();
   }else {
     if (response.data[number] === undefined) {
-      $(`.doc${number}`).hide();
+      $(`#doc${number}`).hide();
 
     }else {
       $(".results").fadeIn();
       $(".noResult").hide();
 
-      $(`.doc${number}`).show();
+      $(`#doc${number}`).show();
       $(`#docImage${number}`).attr('src', response.data[number].profile.image_url)
       $(`#docName${number}`).text(`${response.data[number].profile.first_name}  ${response.data[number].profile.last_name}`)
       $(`#workplace${number}`).text(response.data[number].practices[0].name)
