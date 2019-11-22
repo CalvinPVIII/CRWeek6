@@ -2,9 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Find a Doctor</title>
   </head>
   <body>
+  <div class="Container">
+      <h1>Find a Doctor</h1>
+      <form class="docSearch">
+        <label for="docName">Doctor Name
+        <input type="text" id='docName'>
+        </label>
+        <label for="symptom">Symptom
+        <input type="text" id='symptom'>
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <div class="results">
+          <img src="" alt="doctor" id="docImage">
+          <h4 id='docName'></h4>
+          <h5 id='address'></h5>
+          <h5 id='number'></h5>
+          <h5 id='websites'></h5>
+          <h5 id='acceptingPatients'></h5>
 
+      </div>
+
+    </div>
   </body>
 </html>
