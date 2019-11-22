@@ -1,4 +1,4 @@
-//  import $ from 'jquery'; Uncomment when jquery is used
-import 'bootstrap';
+import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
+import { DoctorService } from './../src/backend.js'
