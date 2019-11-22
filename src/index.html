@@ -6,7 +6,10 @@
   </head>
   <body>
   <div class="Container">
+    <div class="header">
       <h1>Find a Doctor</h1>
+    </div>
+    <p>Search for a doctor based on name or symptoms. Below will return up to 5 of the highest rated doctors in the Portland area that meet your search requirements.</p>
       <form class="docSearch">
         <label for="docName">Doctor Name
         <input type="text" id='docName'>
@@ -14,53 +17,68 @@
         <label for="symptom">Symptom
         <input type="text" id='symptom'>
         </label>
-        <button type="submit">Search</button>
+        <button class="btn btn-info" type="submit">Search</button>
       </form>
       <div class="results">
-        <div class="doc0">
-          <img src="" alt="doctor" id="docImage0">
-          <h4 id='docName0'></h4>
-          <h4 id="workplace0"></h4>
-          <h5><span id='address0'></span></h5>
-          <h5>Phone Number: <span id='number0'></span></h5>
-          <a href=""id='website0'><h5></h5></a>
-          <h5 id='acceptingPatients0'></h5>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="doc0">
+              <img src="" alt="doctor" id="docImage0">
+              <h4 id='docName0'></h4>
+              <h4 id="workplace0"></h4>
+              <h5><span id='address0'></span></h5>
+              <h5>Phone Number: <span id='number0'></span></h5>
+              <a href=""id='website0'><h5></h5></a>
+              <h5 id='acceptingPatients0'></h5>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="doc1">
+              <img src="" alt="doctor" id="docImage1">
+              <h4 id='docName1'></h4>
+              <h4 id="workplace1"></h4>
+              <h5><span id='address1'></span></h5>
+              <h5>Phone Number: <span id='number1'></span></h5>
+              <a href=""id='website1'><h5></h5></a>
+              <h5 id='acceptingPatients1'></h5>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="doc2">
+              <img src="" alt="doctor" id="docImage2">
+              <h4 id='docName2'></h4>
+              <h4 id="workplace2"></h4>
+              <h5><span id='address2'></span></h5>
+              <h5>Phone Number: <span id='number2'></span></h5>
+              <a href=""id='website2'><h5></h5></a>
+              <h5 id='acceptingPatients2'></h5>
+            </div>
+          </div>
         </div>
-        <div class="doc1">
-          <img src="" alt="doctor" id="docImage1">
-          <h4 id='docName1'></h4>
-          <h4 id="workplace1"></h4>
-          <h5><span id='address1'></span></h5>
-          <h5>Phone Number: <span id='number1'></span></h5>
-          <a href=""id='website1'><h5></h5></a>
-          <h5 id='acceptingPatients1'></h5>
-        </div>
-        <div class="doc2">
-          <img src="" alt="doctor" id="docImage2">
-          <h4 id='docName2'></h4>
-          <h4 id="workplace2"></h4>
-          <h5><span id='address2'></span></h5>
-          <h5>Phone Number: <span id='number2'></span></h5>
-          <a href=""id='website2'><h5></h5></a>
-          <h5 id='acceptingPatients2'></h5>
-        </div>
-        <div class="doc3">
-          <img src="" alt="doctor" id="docImage3">
-          <h4 id='docName3'></h4>
-          <h4 id="workplace3"></h4>
-          <h5><span id='address3'></span></h5>
-          <h5>Phone Number: <span id='number3'></span></h5>
-          <a href=""id='website3'><h5></h5></a>
-          <h5 id='acceptingPatients3'></h5>
-        </div>
-        <div class="doc4">
-          <img src="" alt="doctor" id="docImage4">
-          <h4 id='docName4'></h4>
-          <h4 id="workplace4"></h4>
-          <h5><span id='address4'></span></h5>
-          <h5>Phone Number: <span id='number4'></span></h5>
-          <a href=""id='website4'><h5></h5></a>
-          <h5 id='acceptingPatients4'></h5>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="doc3">
+              <img src="" alt="doctor" id="docImage3">
+              <h4 id='docName3'></h4>
+              <h4 id="workplace3"></h4>
+              <h5><span id='address3'></span></h5>
+              <h5>Phone Number: <span id='number3'></span></h5>
+              <a href=""id='website3'><h5></h5></a>
+              <h5 id='acceptingPatients3'></h5>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="doc4">
+              <img src="" alt="doctor" id="docImage4">
+              <h4 id='docName4'></h4>
+              <h4 id="workplace4"></h4>
+              <h5><span id='address4'></span></h5>
+              <h5>Phone Number: <span id='number4'></span></h5>
+              <a href=""id='website4'><h5></h5></a>
+              <h5 id='acceptingPatients4'></h5>
+            </div>
+
+          </div>
         </div>
       </div>
       <div class="noResult">

@@ -1,3 +1,31 @@
 .noResult, .results {
   display: none;
 }
+
+body {
+  background-color: #f0fff8
+}
+
+.header {
+  text-align: center;
+  margin: auto;
+  background-color: #ffa257;
+  background-size: cover;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+.results {
+  margin: 15px;
+}
+p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+}
