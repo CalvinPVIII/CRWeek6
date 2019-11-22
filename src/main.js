@@ -4,6 +4,13 @@ import './styles.css';
 import { DoctorService } from './../src/backend.js'
 
 const addDocToUi = (number, response) => {
+
+if (typeof response == 'string' && response.includes("There was an error handling your request")) {
+  $("#error").text(response);
+  $(".noResult").show();
+  $(".results").hide();
+
+}else {
   if (response.data[0] === undefined) {
     $(".noResult").show();
     $(".results").hide();
@@ -27,6 +34,7 @@ const addDocToUi = (number, response) => {
     }
   }
 }
+}
 
 
 $(document).ready(function(){
@@ -35,10 +43,8 @@ $(document).ready(function(){
     e.preventDefault();
     let name = $("#docName").val();
     let symptom = $("#symptom").val();
-    console.log(name, symptom);
     (async function docSearch() {
       let response = await docService.findDoctors(name, symptom);
-      console.log(response.data[1]);
       addDocToUi(0, response)
       addDocToUi(1, response)
   })();
