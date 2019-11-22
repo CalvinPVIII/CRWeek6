@@ -19,9 +19,10 @@ if (typeof response == 'string' && response.includes("There was an error handlin
       $(`.doc${number}`).hide();
 
     }else {
-      $(`.doc${number}`).show();
+      $(".results").fadeIn();
       $(".noResult").hide();
-      $(".results").show();
+
+      $(`.doc${number}`).show();
       $(`#docImage${number}`).attr('src', response.data[number].profile.image_url)
       $(`#docName${number}`).text(`${response.data[number].profile.first_name}  ${response.data[number].profile.last_name}`)
       $(`#workplace${number}`).text(response.data[number].practices[0].name)
@@ -48,6 +49,7 @@ if (typeof response == 'string' && response.includes("There was an error handlin
 $(document).ready(function(){
   let docService = new DoctorService;
   $(".docSearch").submit(function(e){
+    $(".results").fadeOut();
     e.preventDefault();
     let name = $("#docName").val();
     let symptom = $("#symptom").val();
