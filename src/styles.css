@@ -4,6 +4,7 @@
 
 body {
   background-image: url('https://i.imgur.com/BrJlWgM.png');
+  text-align: center;
 }
 
 .header {
@@ -39,4 +40,8 @@ p {
 }
 .website {
   font-size: 15px;
+}
+
+#error {
+  text-align: center;
 }
