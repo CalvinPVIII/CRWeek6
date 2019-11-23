@@ -1,45 +1,51 @@
-# _{Application Name}_
+# _Find a Doctor_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Search for a doctor, 11/22/2019_
 
-#### By _**{List of contributors}**_
+#### By _**Calvin Will**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is a web app that allows a user to search for a doctor based on name, location, and speciality. The only required field is the location field. The app will pull from the BetterDoctor API, and sort the results based on highest rating._
 
 ## Specs
 | Behavior  | Input  | Output  |
 |---|---|---|
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|  Display doctors based on speciality | sore throat  | "David Huberty"...  |
+| Display doctors based on name  | Amanda  | "Amanda Hamilton"...  |
+| Display doctors based on location  | Portland  | 'Dr.Name,' 'Practice Name' 2348 NW Lovejoy St, Portland Oregon |
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone the repository of off github_
+* _Navigate to the project folder directory using terminal and install dependencies using the command "npm install"_
+* _create a file called .env in the root directory of the project_
+* _get an API key from the BetterDoctor API_
+* _on the first line of the .env file, type "API_KEY = {Your Key Here}_
+* _Run the command "npm start"_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+_For Mac users, if you are having trouble getting the application to load, open the "package.json" file and change the "&" on line 8 to a ";"_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_Currently their are no known bugs_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_For questions comments or concerns, email me at calvinp003@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _HTML_
+* _Javascript_
+* _CSS_
+* _Bootstrap_
+* _JQuery_
+* _BetterDoctor API_
+* _OpenCage Geocoder API_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This work is licensed under MIT*
 
-Copyright (c) 2019 **_{List of contributors or company name}_**
+Copyright (c) 2019 **_Calvin Will_**
