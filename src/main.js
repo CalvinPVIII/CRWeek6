@@ -58,8 +58,9 @@ $(document).ready(function() {
     let userLocation = $("#location").val();
     (async function display() {
       let location = await docService.getLocationInfo(userLocation);
-      if (typeof location == 'string' && location.includes("There was an error handling your request")) {
-        $("#error").text(location);
+      console.log(location.status.code);
+      if (location.status.code !== 200) {
+        $("#error").text('OpenCage Geocoder API failed to fetch');
         $(".noResult").show();
         $(".results").hide();
       }else {

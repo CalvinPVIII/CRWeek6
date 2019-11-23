@@ -15,7 +15,6 @@ export class DoctorService {
       let jsonifiedResponse = await response.json();
       return jsonifiedResponse;
     } catch (error) {
-      console.log('geo error');
       return "There was an error handling your request: " + error.message;
     }
   }
