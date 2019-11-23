@@ -11,10 +11,11 @@ export class DoctorService {
   }
   async getLocationInfo(location) {
     try {
-      let response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${location}&key=a2b385b155014d69827dc9d9e7393c86`);
+      let response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${location}&key=${process.env.GEO_API_KEY}`);
       let jsonifiedResponse = await response.json();
       return jsonifiedResponse;
     } catch (error) {
+      console.log('geo error');
       return "There was an error handling your request: " + error.message;
     }
   }

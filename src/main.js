@@ -58,14 +58,20 @@ $(document).ready(function() {
     let userLocation = $("#location").val();
     (async function display() {
       let location = await docService.getLocationInfo(userLocation);
-      let lat = location.results[0].geometry.lat;
-      let lon = location.results[0].geometry.lng;
-      let response = await docService.findDoctors(name, symptom, lat, lon);
-      addDocToUi(0, response);
-      addDocToUi(1, response);
-      addDocToUi(2, response);
-      addDocToUi(3, response);
-      addDocToUi(4, response);
+      if (typeof location == 'string' && location.includes("There was an error handling your request")) {
+        $("#error").text(location);
+        $(".noResult").show();
+        $(".results").hide();
+      }else {
+        let lat = location.results[0].geometry.lat;
+        let lon = location.results[0].geometry.lng;
+        let response = await docService.findDoctors(name, symptom, lat, lon);
+        addDocToUi(0, response);
+        addDocToUi(1, response);
+        addDocToUi(2, response);
+        addDocToUi(3, response);
+        addDocToUi(4, response);
+      }
     })();
   });
 });
